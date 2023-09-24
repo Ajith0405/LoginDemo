@@ -1,0 +1,17 @@
+<div class="container">
+    <form #loginform="ngForm" (ngSubmit)="logindata()" >
+        <div class="mb-3 mt-3">
+          <label for="uid" class="form-label">User ID:</label>
+          <input type="text" class="form-control" id="uid" placeholder="Enter User Id" name="uid" [(ngModel)]="user.uid">
+        </div>
+        <div class="mb-3">
+          <label for="pwd" class="form-label">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd"  [(ngModel)]="user.pswd">
+        </div>
+        <div class="mt-3">
+            <button type="submit" class="btn btn-primary me-2">Login</button>
+            <button type="reset" class="btn btn-warning">Reset</button>
+        </div>
+        
+      </form>
+</div>
